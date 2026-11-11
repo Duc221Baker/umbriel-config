@@ -1,0 +1,10 @@
+[general]
+mod_key = "Super"
+show_cheatsheet = false
+focus_on_activate = false
+autostart = [
+    "noctalia",
+    "XDG_MENU_PREFIX=arch- kbuildsycoca6",
+    "fcitx5 -d"
+]
+attach_modal_dialogs = true

@@ -1,0 +1,13 @@
+[output.eDP-1]
+enabled = true
+mode = "1920x1080@60"
+position = [0, 0]
+scale = 1.0
+transform = "normal"
+hdr = "off"
+bit_depth = 8
+vrr = "disabled"
+tearing = false
+direct_scanout = true
+
+workspaces = 8

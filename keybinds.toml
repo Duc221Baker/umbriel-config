@@ -1,0 +1,92 @@
+[keybinds]
+# Workspace
+"Mod+Q" = "workspace-switch 1"
+"Mod+W" = "workspace-switch 2"
+"Mod+E" = "workspace-switch 3"
+"Mod+1" = "workspace-switch 4"
+"Mod+2" = "workspace-switch 5"
+"Mod+3" = "workspace-switch 6"
+"Mod+4" = "workspace-switch 7"
+"Mod+5" = "workspace-switch 8"
+
+"Mod+Shift+Q" = "window-move-to-workspace 1"
+"Mod+Shift+W" = "window-move-to-workspace 2"
+"Mod+Shift+E" = "window-move-to-workspace 3"
+"Mod+Shift+1" = "window-move-to-workspace 4"
+"Mod+Shift+2" = "window-move-to-workspace 5"
+"Mod+Shift+3" = "window-move-to-workspace 6"
+"Mod+Shift+4" = "window-move-to-workspace 7"
+"Mod+Shift+5" = "window-move-to-workspace 8"
+# ==============================================================================
+# Apps
+"Mod+T" = { action = "spawn kitty", repeat = false }
+"Mod+X" = { action = "spawn dolphin", repeat = false }
+"Mod+K" = { action = "window-close", repeat = false }
+"Mod+B" = { action = "spawn firefox", repeat = false }
+"Mod+C" = { action = "spawn chromium", repeat = false }
+"Mod+N" = { action = "spawn kate", repeat = false }
+"Mod+O" = { action = "overview-toggle", repeat = false }
+"Mod+Shift+Escape" = { action = "shortcuts-inhibit-toggle", allow_when_inhibited = true, repeat = false }
+# ==============================================================================
+# Clipboard
+"Mod+V" = "spawn noctalia msg panel-toggle clipboard"
+# ==============================================================================
+# Noctalia
+"Mod+Space" = "spawn noctalia msg panel-toggle launcher"
+"Mod+Ctrl+S" = "spawn noctalia msg panel-toggle control-center"
+"Mod+Ctrl+Comma" = "spawn noctalia msg settings-toggle"
+# ==============================================================================
+# Media, Brightness, Session controls
+"XF86AudioRaiseVolume" = { action = "spawn noctalia msg volume-up", allow_when_locked = true }
+"XF86AudioLowerVolume" = { action = "spawn noctalia msg volume-down", allow_when_locked = true }
+"XF86AudioMute" = { action = "spawn noctalia msg volume-mute", allow_when_locked = true, repeat = false }
+"XF86AudioPlay" = { action = "spawn noctalia msg media toggle", allow_when_locked = true, repeat = false }
+"XF86AudioNext" = { action = "spawn noctalia msg media next", allow_when_locked = true }
+"XF86AudioPrev" = { action = "spawn noctalia msg media previous", allow_when_locked = true }
+
+"XF86MonBrightnessUp" = { action = "spawn noctalia msg brightness-up", allow_when_locked = true }
+"XF86MonBrightnessDown" = { action = "spawn noctalia msg brightness-down", allow_when_locked = true }
+
+"XF86PowerOff" = { action = "spawn noctalia msg session lock-and-suspend", allow_when_locked = true }
+"Mod+Ctrl+P" = {action = "spawn noctalia msg dpms-off", allow_when_locked = true }
+"Mod+Ctrl+L" = { action = "spawn noctalia msg session lock && noctalia msg dpms-off", allow_when_locked = true }
+"Mod+U" = "spawn noctalia msg panel-toggle session"
+# ==============================================================================
+# Focus and movement
+"Mod+A" = "window-focus-previous"
+"Mod+D" = "window-focus-next"
+
+"Mod+Left" = "window-focus-left"
+"Mod+Down" = "window-focus-down"
+"Mod+Up" = "window-focus-up"
+"Mod+Right" = "window-focus-right"
+
+"Mod+H" = "window-focus-left"
+"Mod+L" = "window-focus-right"
+
+"Mod+Shift+Left" = "column-move-left"
+"Mod+Shift+Down" = "window-move-down"
+"Mod+Shift+Up" = "window-move-up"
+"Mod+Shift+Right" = "column-move-right"
+
+"Mod+WheelUp" = "window-focus-left"
+"Mod+WheelDown" = "window-focus-right"
+# ==============================================================================
+# Window state and layout
+"Mod+Shift+V" = { action = "window-toggle-floating", repeat = false }
+"Mod+Ctrl+V" = { action = "window-focus-switch-floating", repeat = false }
+"Mod+P" = { action = "window-toggle-pinned", repeat = false }
+"Mod+F" = { action = "window-toggle-maximize", repeat = false }
+"Mod+Shift+F" = { action = "window-toggle-fullscreen", repeat = false }
+"Mod+Minus" = "window-modify-primary-extent -0.05"
+"Mod+Equal" = "window-modify-primary-extent +0.05"
+# ==============================================================================
+# Screenshot
+"Print" = { action = "spawn noctalia msg screenshot-region --copy-to-clipboard", repeat = false }
+"Alt+Print" = { action = "spawn noctalia msg screenshot-region --annotate --copy-to-clipboard", repeat = false }
+# ==============================================================================
+# Hot corners
+[hot_corners.top_left]
+enabled = true
+delay_ms = 500
+action = "overview-open"
