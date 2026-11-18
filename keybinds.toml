@@ -20,7 +20,7 @@
 # ==============================================================================
 # Apps
 "Mod+T" = { action = "spawn kitty", repeat = false }
-"Mod+X" = { action = "spawn dolphin", repeat = false }
+"Mod+X" = { action = "spawn luciole", repeat = false }
 "Mod+K" = { action = "window-close", repeat = false }
 "Mod+B" = { action = "spawn firefox", repeat = false }
 "Mod+C" = { action = "spawn chromium", repeat = false }
